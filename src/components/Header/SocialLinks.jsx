@@ -9,17 +9,17 @@ const SocialLinks = () => {
         href="https://twitter.com/xsh_shahab"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-xl font-semibold cursor-pointer hover:underline"
+        className="text-xl font-semibold cursor-pointer hover:text-purple-700"
       >
-        <FaXTwitter size={22} />
+        <FaXTwitter size={21} />
       </a>
       <a
-        href="https://github.com/xshshahab/unlokthmify"
+        href="https://github.com/xshshahab/unlokarchive"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-xl font-semibold cursor-pointer hover:underline"
+        className="text-xl font-semibold cursor-pointer hover:text-purple-700"
       >
-        <FiGithub size={22} />
+        <FiGithub size={21} />
       </a>
     </>
   );

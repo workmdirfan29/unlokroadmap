@@ -16,12 +16,6 @@ body {
 }
 
 body {
-  background: rgb(3, 0, 6);
-  background: linear-gradient(
-    65deg,
-    rgba(3, 0, 6, 1) 2%,
-    rgba(31, 3, 57, 1) 41%,
-    rgba(0, 0, 0, 1) 82%
-  );
+  background-color: #060606;
   color: white;
 }

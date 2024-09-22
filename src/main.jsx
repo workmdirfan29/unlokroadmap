@@ -8,6 +8,8 @@ import Layout from "./Layout/Layout.jsx";
 import "./index.css";
 import Login from "./auth/Login.jsx";
 import SignUp from "./auth/SignUp.jsx";
+import Index from "./components/Pages/Roadmaps/Categories/Index.jsx";
+import Frontend from "./components/Pages/Roadmaps/Categories/Frontend.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,16 @@ const router = createBrowserRouter([
       {
         path: "roadmap",
         element: <Roadmap />,
+        children: [
+          {
+            path: "",
+            element: <Index />,
+          },
+          {
+            path: "frontend",
+            element: <Frontend />,
+          },
+        ],
       },
       {
         path: "guide",

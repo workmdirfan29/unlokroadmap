@@ -28,10 +28,20 @@ const DesktopNav = () => {
         Guide
       </NavLink>
 
+      <NavLink
+        to="/product"
+        className={({ isActive }) =>
+          `cursor-pointer ${
+            isActive ? "text-purple-500 font-bold" : "hover:text-purple-600"
+          }`
+        }
+      >
+        Product
+      </NavLink>
+
       <div className="text-xl opacity-35 text-slate-100">|</div>
       <SocialLinks />
       <div className="text-xl opacity-45 text-slate-100">|</div>
-
       <AuthLinks />
     </div>
   );

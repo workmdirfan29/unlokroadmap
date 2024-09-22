@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Title from "./Title";
 import DesktopNav from "./DesktopNav";
 import MobileMenu from "./MobileMenu";
+import Title from "./Title";
 import "./Header.css";
 
 const Header = () => {
@@ -40,7 +40,7 @@ const Header = () => {
         isScrolled ? "bg-black/30 backdrop-blur-lg shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between p-2.5  px-10">
+      <div className="flex items-center justify-between p-2 px-10">
         <Title onClick={handleLogoClick} />
         <DesktopNav />
         <MobileMenu
