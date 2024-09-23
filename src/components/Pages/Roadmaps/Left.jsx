@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import FrontendTree from "./FrontendTree";
 
 const Left = () => {
   return (
@@ -18,8 +19,8 @@ const Left = () => {
       <Link to="" className="mb-2 font-semibold hover:text-purple-600">
         Roadmap
       </Link>
-      <Link to="frontend" className="hover:text-purple-600">
-        Frontend
+      <Link to="frontend" className="mb-2">
+        <FrontendTree />
       </Link>
     </div>
   );
