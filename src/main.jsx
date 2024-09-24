@@ -5,11 +5,12 @@ import Home from "./components/Home/Home.jsx";
 import Roadmap from "./components/Pages/Roadmaps/Roadmap.jsx";
 import Guide from "./components/Pages/Guide/Guide.jsx";
 import Layout from "./Layout/Layout.jsx";
-import "./index.css";
 import Login from "./auth/Login.jsx";
 import SignUp from "./auth/SignUp.jsx";
 import Index from "./components/Pages/Roadmaps/Categories/Index.jsx";
 import Frontend from "./components/Pages/Roadmaps/Categories/Frontend.jsx";
+import Product from "./components/Pages/Products/Product.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "guide",
         element: <Guide />,
+      },
+      {
+        path: "product",
+        element: <Product />,
       },
       {
         path: "auth/login",
