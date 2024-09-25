@@ -1,5 +1,4 @@
 import React from "react";
-
 import TechStack from "./TechStack";
 
 const Index = () => {
@@ -13,11 +12,7 @@ const Index = () => {
         guides to help developers choose their learning paths and grow their
         skills.
       </p>
-
-      {/* Tech stack start */}
       <TechStack />
-
-      {/* Tech stack ends */}
     </div>
   );
 };

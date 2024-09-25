@@ -6,6 +6,7 @@ import GITHUB from "../assets/GITHUB.svg";
 import REACT from "../assets/REACT.svg";
 import TS from "../assets/TS.svg";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 // Frontend technologies data
 const frontendTechnologies = [
@@ -20,9 +21,9 @@ const frontendTechnologies = [
 const Frontend = () => {
   return (
     <div className="p-6 text-gray-100 rounded-lg shadow-lg">
-      <h3 className="mb-6 text-3xl font-bold">
+      <div className="mb-6 text-2xl font-bold">
         Frontend <span className="text-purple-600">Development</span>
-      </h3>
+      </div>
 
       <div
         id="tools"
@@ -36,16 +37,16 @@ const Frontend = () => {
             {/* Icon */}
             <img src={tech.icon} alt={tech.name} className="mb-2 w-14 h-14" />
             {/* Name and View link */}
-            <div className="flex justify-between w-full mt-2">
-              <span className="font-semibold text-purple-400 text-md">
+            <div className="flex justify-between w-full mt-4">
+              <span className="text-sm font-semibold text-purple-500">
                 {tech.name}
               </span>
-              <a
-                href={`#${tech.id}`}
+              <Link
+                to={`${tech.id}`}
                 className="flex items-center gap-1 text-green-400 hover:text-green-500"
               >
                 View <FiArrowUpRight size={20} className="pt-1" />
-              </a>
+              </Link>
             </div>
           </div>
         ))}

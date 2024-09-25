@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import FrontendTree from "./FrontendTree";
+import { Link } from "react-router-dom";
+import FrontendTree from "./Frontend/FrontendTree";
 
 const Left = () => {
   return (

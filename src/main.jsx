@@ -8,7 +8,7 @@ import Layout from "./Layout/Layout.jsx";
 import Login from "./auth/Login.jsx";
 import SignUp from "./auth/SignUp.jsx";
 import Index from "./components/Pages/Roadmaps/Categories/Index.jsx";
-import Frontend from "./components/Pages/Roadmaps/Categories/Frontend.jsx";
+import Frontend from "./components/Pages/Roadmaps/Frontend/Frontend.jsx";
 import Product from "./components/Pages/Products/Product.jsx";
 import "./index.css";
 
