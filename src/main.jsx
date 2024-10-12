@@ -7,10 +7,11 @@ import Guide from "./components/Pages/Guide/Guide.jsx";
 import Layout from "./Layout/Layout.jsx";
 import Login from "./auth/Login.jsx";
 import SignUp from "./auth/SignUp.jsx";
-import Index from "./components/Pages/Roadmaps/Categories/Index.jsx";
+import Index from "./components/Pages/Roadmaps/IntroPage/Index.jsx";
 import Frontend from "./components/Pages/Roadmaps/Frontend/Frontend.jsx";
 import Product from "./components/Pages/Products/Product.jsx";
 import "./index.css";
+import HtmlPage from "./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
           {
             path: "frontend",
             element: <Frontend />,
+          },
+          {
+            path: "html",
+            element: <HtmlPage />,
           },
         ],
       },

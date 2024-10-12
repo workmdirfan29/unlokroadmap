@@ -8,12 +8,12 @@ const FrontendTree = () => {
 
   // Array for frontend technologies with paths
   const frontendTechnologies = [
-    { name: "HTML", path: "frontend/html" },
-    { name: "CSS", path: "frontend/css" },
-    { name: "JavaScript", path: "frontend/javascript" },
-    { name: "Github", path: "frontend/github" },
-    { name: "React JS", path: "frontend/react" },
-    { name: "TypeScript", path: "frontend/typescript" },
+    { name: "HTML", path: "html" },
+    { name: "CSS", path: "css" },
+    { name: "JavaScript", path: "javascript" },
+    { name: "Github", path: "github" },
+    { name: "React JS", path: "react" },
+    { name: "TypeScript", path: "typescript" },
   ];
 
   return (

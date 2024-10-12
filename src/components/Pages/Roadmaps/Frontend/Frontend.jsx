@@ -20,10 +20,14 @@ const frontendTechnologies = [
 
 const Frontend = () => {
   return (
-    <div className="p-6 text-gray-100 rounded-lg shadow-lg">
+    <div className="p-2 text-gray-100 rounded-lg shadow-lg">
       <div className="mb-6 text-2xl font-bold">
         Frontend <span className="text-purple-600">Development</span>
       </div>
+      <p className="mb-4">
+        Frontend development is about building the part of a website or app that
+        users interact with, making it visually appealing and easy to use.
+      </p>
 
       <div
         id="tools"
@@ -42,7 +46,7 @@ const Frontend = () => {
                 {tech.name}
               </span>
               <Link
-                to={`${tech.id}`}
+                to={`/roadmap/${tech.id}`}
                 className="flex items-center gap-1 text-green-400 hover:text-green-500"
               >
                 View <FiArrowUpRight size={20} className="pt-1" />
