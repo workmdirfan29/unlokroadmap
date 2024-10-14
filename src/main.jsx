@@ -5,13 +5,15 @@ import Home from "./components/Home/Home.jsx";
 import Roadmap from "./components/Pages/Roadmaps/Roadmap.jsx";
 import Guide from "./components/Pages/Guide/Guide.jsx";
 import Layout from "./Layout/Layout.jsx";
-import Login from "./auth/Login.jsx";
-import SignUp from "./auth/SignUp.jsx";
 import Index from "./components/Pages/Roadmaps/IntroPage/Index.jsx";
 import Frontend from "./components/Pages/Roadmaps/Frontend/Frontend.jsx";
 import Product from "./components/Pages/Products/Product.jsx";
 import "./index.css";
 import HtmlPage from "./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx";
+import CSSPage from "./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx";
+import FrontendGuide from "./components/Pages/Guide/Content/FrontendGuide.jsx";
+import HtmlPrev from "./components/Pages/Guide/Content/HtmlPrev.jsx";
+import GuideShow from "./components/Pages/Guide/Intro/GuideShow.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,23 +40,33 @@ const router = createBrowserRouter([
             path: "html",
             element: <HtmlPage />,
           },
+          {
+            path: "css",
+            element: <CSSPage />,
+          },
         ],
       },
       {
         path: "guide",
         element: <Guide />,
+        children: [
+          {
+            path: "",
+            element: <GuideShow />,
+          },
+          {
+            path: "frontend",
+            element: <FrontendGuide />,
+          },
+          {
+            path: "html",
+            element: <HtmlPrev />,
+          },
+        ],
       },
       {
         path: "product",
         element: <Product />,
-      },
-      {
-        path: "auth/login",
-        element: <Login />,
-      },
-      {
-        path: "auth/signup",
-        element: <SignUp />,
       },
     ],
   },

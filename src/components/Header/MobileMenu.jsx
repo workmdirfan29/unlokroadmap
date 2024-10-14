@@ -60,24 +60,6 @@ const MobileMenu = ({
           >
             Guide
           </NavLink>
-          <hr className="opacity-20" />
-          <div id="auth" className="flex flex-col pt-3 gap-2.5">
-            <Link
-              to="/auth/login"
-              id="login"
-              className="font-bold hover:text-purple-500"
-            >
-              Login
-            </Link>
-
-            <Link
-              to="/auth/signup"
-              id="signup"
-              className="px-2 py-1.5 w-[75px] rounded bg-purple-600 hover:bg-purple-700"
-            >
-              Sign Up
-            </Link>
-          </div>
         </nav>
         <div className="flex items-center gap-3 p-2 mt-auto">
           <SocialLinks />

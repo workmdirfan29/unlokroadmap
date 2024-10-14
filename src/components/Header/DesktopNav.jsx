@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
-import AuthLinks from "./AuthLinks";
 
 const DesktopNav = () => {
   return (
@@ -41,8 +40,6 @@ const DesktopNav = () => {
 
       <div className="text-xl opacity-35 text-slate-100">|</div>
       <SocialLinks />
-      <div className="text-xl opacity-45 text-slate-100">|</div>
-      <AuthLinks />
     </div>
   );
 };
