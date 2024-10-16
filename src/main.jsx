@@ -14,6 +14,8 @@ import CSSPage from "./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx"
 import FrontendGuide from "./components/Pages/Guide/Content/FrontendGuide.jsx";
 import HtmlPrev from "./components/Pages/Guide/Content/HtmlPrev.jsx";
 import GuideShow from "./components/Pages/Guide/Intro/GuideShow.jsx";
+import CssGuide from "./components/Pages/Guide/Content/CssGuide.jsx";
+import JsGuide from "./components/Pages/Guide/Content/JsGuide.jsx";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +63,14 @@ const router = createBrowserRouter([
           {
             path: "html",
             element: <HtmlPrev />,
+          },
+          {
+            path: "css",
+            element: <CssGuide />,
+          },
+          {
+            path: "javascript",
+            element: <JsGuide />,
           },
         ],
       },
