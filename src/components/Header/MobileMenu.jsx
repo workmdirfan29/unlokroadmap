@@ -39,6 +39,17 @@ const MobileMenu = ({
         </div>
         <nav className="w-full mt-8">
           <NavLink
+            to="/dev-design"
+            className={({ isActive }) =>
+              `block mb-4 cursor-pointer ${
+                isActive ? "text-sky-700 font-bold" : "hover:underline"
+              }`
+            }
+            onClick={closeMobileMenu}
+          >
+            Developer Design
+          </NavLink>
+          <NavLink
             to="/roadmap"
             className={({ isActive }) =>
               `block mb-4 cursor-pointer ${

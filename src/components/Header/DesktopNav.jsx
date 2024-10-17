@@ -6,6 +6,16 @@ const DesktopNav = () => {
   return (
     <div className="hidden md:flex items-center gap-4 text-md font-[500]">
       <NavLink
+        to="/dev-design"
+        className={({ isActive }) =>
+          `cursor-pointer ${
+            isActive ? "text-purple-500 font-bold" : "hover:text-purple-600"
+          }`
+        }
+      >
+        Developer Design
+      </NavLink>
+      <NavLink
         to="/roadmap"
         className={({ isActive }) =>
           `cursor-pointer ${
