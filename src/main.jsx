@@ -16,6 +16,8 @@ import HtmlPrev from "./components/Pages/Guide/Content/HtmlPrev.jsx";
 import GuideShow from "./components/Pages/Guide/Intro/GuideShow.jsx";
 import CssGuide from "./components/Pages/Guide/Content/CssGuide.jsx";
 import JsGuide from "./components/Pages/Guide/Content/JsGuide.jsx";
+import DevDesign from "./components/Pages/DevDesign/DevDesign.jsx";
+import DevIntro from "./components/Pages/DevDesign/DevPages/DevIntro.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,16 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "dev-design",
+        element: <DevDesign />,
+        children: [
+          {
+            path: "",
+            element: <DevIntro />,
+          },
+        ],
       },
       {
         path: "roadmap",
