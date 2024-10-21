@@ -1,4 +1,5 @@
 import React from "react";
+import { FiGithub } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const DevLeft = () => {
@@ -11,6 +12,7 @@ const DevLeft = () => {
         <h2 className="font-semibold text-purple-700">Follow for updates</h2>
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://x.com/xsh_shahab"
           className="text-sm text-slate-300 hover:text-purple-600 hover:font-bold hover:scale-125"
         >
@@ -23,6 +25,19 @@ const DevLeft = () => {
         Dev Design
       </Link>
       <hr className="my-3.5 opacity-15" />
+      <div className="flex items-center justify-between">
+        <Link to="xsh_shahab" className="font-semibold hover:text-purple-700">
+          <h3>xsh_shahab</h3>
+        </Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 hover:text-purple-700"
+          href="https://github.com/xshshahab"
+        >
+          <FiGithub size={20} />
+        </a>
+      </div>
     </div>
   );
 };

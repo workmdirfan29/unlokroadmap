@@ -18,6 +18,7 @@ import CssGuide from "./components/Pages/Guide/Content/CssGuide.jsx";
 import JsGuide from "./components/Pages/Guide/Content/JsGuide.jsx";
 import DevDesign from "./components/Pages/DevDesign/DevDesign.jsx";
 import DevIntro from "./components/Pages/DevDesign/DevPages/DevIntro.jsx";
+import XshShahab from "./components/Pages/DevDesign/DevPages/XshShahab.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
           {
             path: "",
             element: <DevIntro />,
+          },
+          {
+            path: "xsh_shahab",
+            element: <XshShahab />,
           },
         ],
       },
