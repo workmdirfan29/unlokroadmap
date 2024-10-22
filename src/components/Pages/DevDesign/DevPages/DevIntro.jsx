@@ -1,9 +1,10 @@
 import React from "react";
+import Docs from "../assets/Docs.png";
 
 const DevIntro = () => {
   return (
-    <div className="rounded-lg shadow-md ">
-      <h1 className="mb-1 text-3xl font-bold text-gray-200">
+    <div className="p-4 rounded-lg shadow-md">
+      <h1 className="mb-1.5 text-3xl font-bold text-gray-200">
         Dev <span className="text-purple-600">Design</span>
       </h1>
       <p className="mt-1 text-gray-300">
@@ -19,6 +20,16 @@ const DevIntro = () => {
         Join us in creating a collaborative space for developers to share their
         insights and experiences!
       </p>
+      <div
+        id="image-container"
+        className="flex md:my-4 h-[30vh] md:h-[80vh] rounded-lg shadow-md"
+      >
+        <img
+          src={Docs}
+          alt="dev-docs"
+          className="object-center w-full h-full rotate-180 rounded-lg shadow-lg"
+        />
+      </div>
     </div>
   );
 };

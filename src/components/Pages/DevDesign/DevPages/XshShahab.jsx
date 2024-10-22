@@ -29,7 +29,6 @@ const XshShahab = () => {
         Each algorithm mastered brings you closer to greatness—don’t just dream,
         become the developer you aspire to be!
       </p>
-
       <hr className="my-3 opacity-15" />
       {categories.map((category) => (
         <div id="list-box" className="p-2" key={category}>
