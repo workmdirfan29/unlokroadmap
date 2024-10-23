@@ -20,6 +20,7 @@ import DevDesign from "./components/Pages/DevDesign/DevDesign.jsx";
 import DevIntro from "./components/Pages/DevDesign/DevPages/DevIntro.jsx";
 import XshShahab from "./components/Pages/DevDesign/DevPages/XshShahab.jsx";
 import JsPage from "./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx";
+import GithubPage from "./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
           {
             path: "javascript",
             element: <JsPage />,
+          },
+          {
+            path: "github",
+            element: <GithubPage />,
           },
         ],
       },
