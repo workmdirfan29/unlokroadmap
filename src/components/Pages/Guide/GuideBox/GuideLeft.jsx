@@ -6,6 +6,8 @@ const links = [
   { to: "html", label: "HTML" },
   { to: "css", label: "CSS" },
   { to: "javascript", label: "JavaScript" },
+  { to: "github", label: "Github" },
+  { to: "react-js", label: "React Js" },
 ];
 
 const GuideLeft = ({ toggleSidebar }) => {

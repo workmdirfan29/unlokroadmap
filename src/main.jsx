@@ -21,6 +21,8 @@ import DevIntro from "./components/Pages/DevDesign/DevPages/DevIntro.jsx";
 import XshShahab from "./components/Pages/DevDesign/DevPages/XshShahab.jsx";
 import JsPage from "./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx";
 import GithubPage from "./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx";
+import GithubGuide from "./components/Pages/Guide/Content/GithubGuide.jsx";
+import ReactJsGuide from "./components/Pages/Guide/Content/ReactJsGuide.jsx";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +100,14 @@ const router = createBrowserRouter([
           {
             path: "javascript",
             element: <JsGuide />,
+          },
+          {
+            path: "github",
+            element: <GithubGuide />,
+          },
+          {
+            path: "react-js",
+            element: <ReactJsGuide />,
           },
         ],
       },
