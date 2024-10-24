@@ -1,6 +1,9 @@
-import React, { Suspense, lazy } from "react";
-import Spinner from "./Spinner/Spinner";
-import NavigationButton from "./NavigationButton";
+import React, { Suspense, lazy, memo } from "react";
+import NavigationButton from "../../../../../Button/NavigationButton";
+import Spinner from "../../../../../Spinner/Spinner";
+import htmlTopics from "./htmlTopics";
+
+// Lazy load components
 const Resources = lazy(() => import("./Resources"));
 
 const components = {
@@ -16,7 +19,8 @@ const components = {
   Everything: lazy(() => import("./Code/Everything")),
 };
 
-const DaySection = ({ day, title, topics, exampleComponent }) => (
+// Memoized DaySection component
+const DaySection = memo(({ day, title, topics, exampleComponent }) => (
   <div id={`day-${day}`} key={day}>
     <h3 className="mb-2 text-xl font-semibold">{title}</h3>
     <ul className="mb-1 list-disc md:ml-5">
@@ -39,92 +43,15 @@ const DaySection = ({ day, title, topics, exampleComponent }) => (
     </div>
     <hr className="my-5 opacity-20" />
   </div>
-);
+));
 
-const htmlTopics = [
-  {
-    day: 1,
-    title: "Day 1: Introduction to HTML",
-    topics: [
-      "Learn the Basics: Understand what HTML is and its role in web development.",
-      "Set Up Your Environment: Install a text editor (like VSCode or Sublime Text).",
-      "Basic Structure: Learn about the basic HTML document structure:",
-    ],
-    exampleComponent: "BoilerPlate",
-  },
-  {
-    day: 2,
-    title: "Day 2: Text Formatting",
-    topics: [
-      "Headings, Paragraphs, and Line Breaks",
-      "Text Formatting Tags (bold, italics, underline)",
-    ],
-    exampleComponent: "Text",
-  },
-  {
-    day: 3,
-    title: "Day 3: Lists",
-    topics: ["Unordered Lists", "Ordered Lists", "Definition Lists"],
-    exampleComponent: "Lists",
-  },
-  {
-    day: 4,
-    title: "Day 4: Links and Images",
-    topics: ["Hyperlinks", "Images", "Videos"],
-    exampleComponent: "LinkImages",
-  },
-  {
-    day: 5,
-    title: "Day 5: Tables",
-    topics: ["Creating Tables", "Table Attributes"],
-    exampleComponent: "TableCode",
-  },
-  {
-    day: 6,
-    title: "Day 6: Forms",
-    topics: [
-      "Basic Form Elements (text input, radio buttons, checkboxes, dropdowns)",
-    ],
-    exampleComponent: "FormCode",
-  },
-  {
-    day: 7,
-    title: "Day 7: Semantic HTML",
-    topics: [
-      "Importance of Semantic Tags",
-      "Common Semantic Elements (article, section, header, footer, nav)",
-    ],
-    exampleComponent: "Semantic",
-  },
-  {
-    day: 8,
-    title: "Day 8: Multimedia",
-    topics: ["Embedding Videos and Audio"],
-    exampleComponent: "Multimedia",
-  },
-  {
-    day: 9,
-    title: "Day 9: HTML Entities and Special Characters",
-    topics: ["Using HTML Entities"],
-    exampleComponent: "Entities",
-  },
-  {
-    day: 10,
-    title: "Day 10: Putting It All Together",
-    topics: [
-      "Create a Complete Web Page",
-      "Use all previously learned elements",
-    ],
-    exampleComponent: "Everything",
-  },
-];
-
+// Main component
 const HtmlPage = () => {
   return (
     <div className="flex flex-col p-2 text-gray-100 rounded-lg shadow-lg">
       <div id="headings">
         <h1 className="mb-4 text-2xl font-semibold">
-          Html <span className="text-purple-700">Roadmap</span>
+          HTML <span className="text-purple-700">Roadmap</span>
         </h1>
         <p className="mb-4 text-slate-200">
           HTML (HyperText Markup Language) is the standard language used to
@@ -143,7 +70,7 @@ const HtmlPage = () => {
           title={title}
           topics={topics}
           exampleComponent={exampleComponent}
-          key={day} // Ensure key is unique for each DaySection
+          key={day}
         />
       ))}
 
@@ -174,7 +101,7 @@ const HtmlPage = () => {
         </ul>
       </div>
       <div id="navigate" className="flex justify-end my-2">
-        <NavigationButton />
+        <NavigationButton path={"/roadmap/css"} title={"CSS"} />
       </div>
     </div>
   );

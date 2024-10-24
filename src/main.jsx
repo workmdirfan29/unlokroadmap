@@ -23,6 +23,7 @@ import JsPage from "./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx";
 import GithubPage from "./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx";
 import GithubGuide from "./components/Pages/Guide/Content/GithubGuide.jsx";
 import ReactJsGuide from "./components/Pages/Guide/Content/ReactJsGuide.jsx";
+import ErrorBoundary from "./ErrorBoundary.jsx";
 
 const router = createBrowserRouter([
   {
@@ -121,6 +122,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
   </StrictMode>
 );

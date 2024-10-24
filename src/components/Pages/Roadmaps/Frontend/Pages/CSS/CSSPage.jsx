@@ -1,9 +1,10 @@
-import React, { Suspense, lazy } from "react";
-import Spinner from "./Spinner/Spinner";
-import { cssTopics } from "./cssTopics";
+import React, { Suspense, lazy, memo } from "react";
+import { cssTopics } from "./cssTopics"; // Assuming cssTopics is defined in another file
 import Resources from "./Resources";
-import NavigationButton from "./NavigationButton";
+import NavigationButton from "../../../../../Button/NavigationButton";
+import Spinner from "../../../../../Spinner/Spinner";
 
+// Lazy load CSS components
 const components = {
   BoilerPlate: lazy(() => import("./Code/BoilerPlate")),
   Selectors: lazy(() => import("./Code/Selectors")),
@@ -17,7 +18,8 @@ const components = {
   ResponsiveDesign: lazy(() => import("./Code/ResponsiveDesign")),
 };
 
-const DaySection = ({ day, title, topics, exampleComponent }) => (
+// Memoized DaySection component to prevent unnecessary re-renders
+const DaySection = memo(({ day, title, topics, exampleComponent }) => (
   <div id={`day-${day}`} key={day}>
     <h3 className="mb-2 text-xl font-semibold">{title}</h3>
     <ul className="mb-1 list-disc md:ml-5">
@@ -40,8 +42,9 @@ const DaySection = ({ day, title, topics, exampleComponent }) => (
     </div>
     <hr className="my-5 opacity-20" />
   </div>
-);
+));
 
+// Main component
 const CssPage = () => {
   return (
     <div className="flex flex-col p-2 text-gray-100 rounded-lg shadow-lg">
@@ -65,9 +68,10 @@ const CssPage = () => {
           title={title}
           topics={topics}
           exampleComponent={exampleComponent}
-          key={day}
+          key={day} // Ensure key is unique for each DaySection
         />
       ))}
+
       <div className="resources">
         <Suspense fallback={<Spinner />}>
           <Resources />
@@ -100,7 +104,6 @@ const CssPage = () => {
           path={"/roadmap/html"}
           title={"Html"}
         />
-
         <NavigationButton path={"/roadmap/javascript"} title={"Js"} />
       </div>
     </div>
