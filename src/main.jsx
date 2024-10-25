@@ -24,6 +24,7 @@ import GithubPage from "./components/Pages/Roadmaps/Frontend/Pages/Github/Github
 import GithubGuide from "./components/Pages/Guide/Content/GithubGuide.jsx";
 import ReactJsGuide from "./components/Pages/Guide/Content/ReactJsGuide.jsx";
 import ErrorBoundary from "./ErrorBoundary.jsx";
+import ReactJsPage from "./components/Pages/Roadmaps/Frontend/Pages/ReactJs/ReactJsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
           {
             path: "github",
             element: <GithubPage />,
+          },
+          {
+            path: "reactjs",
+            element: <ReactJsPage />,
           },
         ],
       },

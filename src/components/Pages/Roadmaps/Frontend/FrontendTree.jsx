@@ -12,7 +12,7 @@ const FrontendTree = () => {
     { name: "CSS", path: "css" },
     { name: "JavaScript", path: "javascript" },
     { name: "Github", path: "github" },
-    { name: "React JS", path: "react" },
+    { name: "React JS", path: "reactjs" },
     { name: "TypeScript", path: "typescript" },
   ];
 
