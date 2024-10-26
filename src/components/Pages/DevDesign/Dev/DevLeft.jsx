@@ -27,7 +27,7 @@ const DevLeft = () => {
       <hr className="my-3.5 opacity-15" />
       <div className="flex items-center justify-between">
         <Link to="xsh_shahab" className="font-semibold hover:text-purple-700">
-          <h3>xsh_shahab</h3>
+          <h3 className="font-mono text-lg font-semibold">xsh_shahab</h3>
         </Link>
         <a
           target="_blank"

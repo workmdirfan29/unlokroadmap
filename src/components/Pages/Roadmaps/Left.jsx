@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FrontendTree from "./Frontend/FrontendTree";
+import BackendTree from "./Backend/BackendTree";
 
 const Left = () => {
   return (
@@ -19,6 +20,9 @@ const Left = () => {
       </Link>
       <Link to="frontend" className="mb-2">
         <FrontendTree />
+      </Link>
+      <Link to="backend" className="mb-2">
+        <BackendTree />
       </Link>
     </div>
   );

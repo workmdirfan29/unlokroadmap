@@ -1,5 +1,5 @@
 import React from "react";
-import Docs from "../assets/Docs.png";
+import Docs from "./assets/Docs.png";
 
 const DevIntro = () => {
   return (

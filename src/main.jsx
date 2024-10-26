@@ -1,125 +1,165 @@
-import { StrictMode } from "react";
+import "./index.css";
+import { StrictMode, Suspense, lazy } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./components/Home/Home.jsx";
-import Roadmap from "./components/Pages/Roadmaps/Roadmap.jsx";
-import Guide from "./components/Pages/Guide/Guide.jsx";
-import Layout from "./Layout/Layout.jsx";
-import Index from "./components/Pages/Roadmaps/IntroPage/Index.jsx";
-import Frontend from "./components/Pages/Roadmaps/Frontend/Frontend.jsx";
-import Product from "./components/Pages/Products/Product.jsx";
-import "./index.css";
-import HtmlPage from "./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx";
-import CSSPage from "./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx";
-import FrontendGuide from "./components/Pages/Guide/Content/FrontendGuide.jsx";
-import HtmlPrev from "./components/Pages/Guide/Content/HtmlPrev.jsx";
-import GuideShow from "./components/Pages/Guide/Intro/GuideShow.jsx";
-import CssGuide from "./components/Pages/Guide/Content/CssGuide.jsx";
-import JsGuide from "./components/Pages/Guide/Content/JsGuide.jsx";
-import DevDesign from "./components/Pages/DevDesign/DevDesign.jsx";
-import DevIntro from "./components/Pages/DevDesign/DevPages/DevIntro.jsx";
-import XshShahab from "./components/Pages/DevDesign/DevPages/XshShahab.jsx";
-import JsPage from "./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx";
-import GithubPage from "./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx";
-import GithubGuide from "./components/Pages/Guide/Content/GithubGuide.jsx";
-import ReactJsGuide from "./components/Pages/Guide/Content/ReactJsGuide.jsx";
-import ErrorBoundary from "./ErrorBoundary.jsx";
-import ReactJsPage from "./components/Pages/Roadmaps/Frontend/Pages/ReactJs/ReactJsPage.jsx";
+
+// Lazy load components
+const Home = lazy(() => import("./components/Home/Home.jsx"));
+const Roadmap = lazy(() => import("./components/Pages/Roadmaps/Roadmap.jsx"));
+const Guide = lazy(() => import("./components/Pages/Guide/Guide.jsx"));
+const Layout = lazy(() => import("./Layout/Layout.jsx"));
+const Index = lazy(() =>
+  import("./components/Pages/Roadmaps/IntroPage/Index.jsx")
+);
+const Frontend = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Frontend.jsx")
+);
+const Product = lazy(() => import("./components/Pages/Products/Product.jsx"));
+const HtmlPage = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx")
+);
+const CSSPage = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx")
+);
+const FrontendGuide = lazy(() =>
+  import("./components/Pages/Guide/Content/FrontendGuide.jsx")
+);
+const HtmlPrev = lazy(() =>
+  import("./components/Pages/Guide/Content/HtmlPrev.jsx")
+);
+const GuideShow = lazy(() =>
+  import("./components/Pages/Guide/Intro/GuideShow.jsx")
+);
+const CssGuide = lazy(() =>
+  import("./components/Pages/Guide/Content/CssGuide.jsx")
+);
+const JsGuide = lazy(() =>
+  import("./components/Pages/Guide/Content/JsGuide.jsx")
+);
+const DevDesign = lazy(() =>
+  import("./components/Pages/DevDesign/DevDesign.jsx")
+);
+const DevIntro = lazy(() =>
+  import("./components/Pages/DevDesign/Dev/DevIntro.jsx")
+);
+const XshShahab = lazy(() =>
+  import("./components/Pages/DevDesign/DevPages/XshShahab.jsx")
+);
+const JsPage = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx")
+);
+const GithubPage = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx")
+);
+const GithubGuide = lazy(() =>
+  import("./components/Pages/Guide/Content/GithubGuide.jsx")
+);
+const ReactJsGuide = lazy(() =>
+  import("./components/Pages/Guide/Content/ReactJsGuide.jsx")
+);
+const ReactJsPage = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Pages/ReactJs/ReactJsPage.jsx")
+);
+
+const TSPage = lazy(() =>
+  import("./components/Pages/Roadmaps/Frontend/Pages/TypeScript/TSPage.jsx")
+);
+
+const TsGuide = lazy(() => import("./components/Pages/Guide/Content/TsGuide.jsx"))
+const Backend = lazy(() => import("./components/Pages/Roadmaps/Backend/Backend.jsx"))
+
+const NotFound = lazy(() => import("./components/utils/NotFound.jsx"));
+const ErrorBoundary = lazy(() => import("./ErrorBoundary.jsx"));
+const Spinner = lazy(() => import("./Spinner.jsx"));
+
+// Route grouping for better organization
+const devDesignRoutes = [
+  { path: "", element: <DevIntro /> },
+  { path: "xsh_shahab", element: <XshShahab /> },
+];
+
+const roadmapRoutes = [
+  { path: "", element: <Index /> },
+  { path: "frontend", element: <Frontend /> },
+  { path: "html", element: <HtmlPage /> },
+  { path: "css", element: <CSSPage /> },
+  { path: "javascript", element: <JsPage /> },
+  { path: "github", element: <GithubPage /> },
+  { path: "reactjs", element: <ReactJsPage /> },
+  { path: "typescript", element: <TSPage /> },
+  { path: "backend", element: <Backend /> },
+];
+
+const guideRoutes = [
+  { path: "", element: <GuideShow /> },
+  { path: "frontend", element: <FrontendGuide /> },
+  { path: "html", element: <HtmlPrev /> },
+  { path: "css", element: <CssGuide /> },
+  { path: "javascript", element: <JsGuide /> },
+  { path: "github", element: <GithubGuide /> },
+  { path: "react-js", element: <ReactJsGuide /> },
+  { path: "ts-guide", element: <TsGuide /> },
+];
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <Suspense fallback={<Spinner />}>
+        <Layout />
+      </Suspense>
+    ),
     children: [
       {
         path: "",
-        element: <Home />,
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "dev-design",
-        element: <DevDesign />,
-        children: [
-          {
-            path: "",
-            element: <DevIntro />,
-          },
-          {
-            path: "xsh_shahab",
-            element: <XshShahab />,
-          },
-        ],
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <DevDesign />
+          </Suspense>
+        ),
+        children: devDesignRoutes,
       },
       {
         path: "roadmap",
-        element: <Roadmap />,
-        children: [
-          {
-            path: "",
-            element: <Index />,
-          },
-          {
-            path: "frontend",
-            element: <Frontend />,
-          },
-          {
-            path: "html",
-            element: <HtmlPage />,
-          },
-          {
-            path: "css",
-            element: <CSSPage />,
-          },
-          {
-            path: "javascript",
-            element: <JsPage />,
-          },
-          {
-            path: "github",
-            element: <GithubPage />,
-          },
-          {
-            path: "reactjs",
-            element: <ReactJsPage />,
-          },
-        ],
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <Roadmap />
+          </Suspense>
+        ),
+        children: roadmapRoutes,
       },
       {
         path: "guide",
-        element: <Guide />,
-        children: [
-          {
-            path: "",
-            element: <GuideShow />,
-          },
-          {
-            path: "frontend",
-            element: <FrontendGuide />,
-          },
-          {
-            path: "html",
-            element: <HtmlPrev />,
-          },
-          {
-            path: "css",
-            element: <CssGuide />,
-          },
-          {
-            path: "javascript",
-            element: <JsGuide />,
-          },
-          {
-            path: "github",
-            element: <GithubGuide />,
-          },
-          {
-            path: "react-js",
-            element: <ReactJsGuide />,
-          },
-        ],
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <Guide />
+          </Suspense>
+        ),
+        children: guideRoutes,
       },
       {
         path: "product",
-        element: <Product />,
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <Product />
+          </Suspense>
+        ),
+      },
+      {
+        path: "*",
+        element: (
+          <Suspense fallback={<Spinner />}>
+            <NotFound />
+          </Suspense>
+        ),
       },
     ],
   },
@@ -127,8 +167,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ErrorBoundary>
-      <RouterProvider router={router} />
-    </ErrorBoundary>
+    <Suspense fallback={<Spinner />}>
+      <ErrorBoundary>
+        <RouterProvider router={router} />
+      </ErrorBoundary>
+    </Suspense>
   </StrictMode>
 );

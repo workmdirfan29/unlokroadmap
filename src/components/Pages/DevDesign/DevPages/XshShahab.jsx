@@ -34,7 +34,7 @@ const XshShahab = () => {
         <div id="list-box" className="p-2" key={category}>
           <div
             id="list-heading"
-            className="mb-2 text-xl font-semibold"
+            className="mb-2 font-mono text-xl font-bold text-neutral-200"
             onClick={() => toggleCategory(category)}
             style={{
               cursor: "pointer",

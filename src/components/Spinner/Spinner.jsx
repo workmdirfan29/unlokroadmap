@@ -3,11 +3,8 @@ import "./Spinner.css";
 
 const Spinner = () => {
   return (
-    <div className="lds-ellipsis">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className="z-10 flex items-center justify-center w-full h-screen">
+      <div className="loader"></div>
     </div>
   );
 };

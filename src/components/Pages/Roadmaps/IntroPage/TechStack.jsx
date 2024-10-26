@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 const techStacks = [
-  { name: "Frontend", url: "frontend", new: true },
-  { name: "Backend", url: "backend", comingSoon: true },
+  { name: "Frontend", url: "frontend", new: false },
+  { name: "Backend", url: "backend", new: true },
   { name: "Fullstack", url: "fullstack", comingSoon: true },
   { name: "DevOps", url: "devops", comingSoon: true },
   { name: "Data Analyst", url: "data-analyst", comingSoon: true },
