@@ -1,11 +1,11 @@
 import React, { Suspense, lazy, memo } from "react";
 import Spinner from "../../../../../Spinner/Spinner";
 import NavigationButton from "../../../../../Button/NavigationButton";
-import tsTopics from "./tsTopics"; // Import the tsTopics data
+import tsTopics from "./tsTopics";
 
 // Lazy load components
 const Resources = lazy(() => import("./Resources"));
-const Tips = lazy(() => import("./Tips"));
+const Tips = lazy(() => import("../../../Tips/Tips"));
 
 const components = {
   Introduction: lazy(() => import("./Code/Introduction")),

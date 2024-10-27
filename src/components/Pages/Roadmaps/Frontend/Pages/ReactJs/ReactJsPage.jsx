@@ -5,7 +5,7 @@ import reactTopics from "./reactTopics"; // Import the reactTopics data
 
 // Lazy load components
 const Resources = lazy(() => import("./Resources"));
-const Tips = lazy(() => import("./Tips"));
+const Tips = lazy(() => import("../../../Tips/Tips"));
 
 const components = {
   JSX: lazy(() => import("./Code/JSX")),

@@ -5,7 +5,8 @@ import gitTopics from "./gitTopics"; // Import the gitTopics data
 
 // Lazy load components
 const Resources = lazy(() => import("./Resources"));
-const Tips = lazy(() => import("./Tips"));
+const Tips = lazy(() => import("../../../Tips/Tips"));
+
 
 const components = {
   Repositories: lazy(() => import("./Code/Repositories")),
@@ -81,9 +82,11 @@ const GitHubPage = () => {
       </div>
 
       <hr className="mb-4 opacity-20" />
-      <Suspense fallback={<Spinner />}>
-        <Tips />
-      </Suspense>
+      <div id="success">
+        <Suspense fallback={<Spinner />}>
+          <Tips />
+        </Suspense>
+      </div>
       <div id="navigate" className="flex justify-between mt-4 mb-2">
         <NavigationButton
           direction="left"

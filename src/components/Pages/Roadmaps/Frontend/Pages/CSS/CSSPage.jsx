@@ -4,6 +4,9 @@ import Resources from "./Resources";
 import NavigationButton from "../../../../../Button/NavigationButton";
 import Spinner from "../../../../../Spinner/Spinner";
 
+const Tips = lazy(() => import("../../../Tips/Tips"));
+
+
 // Lazy load CSS components
 const components = {
   BoilerPlate: lazy(() => import("./Code/BoilerPlate")),
@@ -80,24 +83,11 @@ const CssPage = () => {
 
       <hr className="mb-4 opacity-20" />
       <div id="success">
-        <h3 className="mb-4 text-3xl font-semibold text-center">
-          Tips for Success:
-        </h3>
-        <ul className="mb-1 list-disc md:ml-5">
-          <li className="mb-2">
-            <b>Practice:</b> After completing the examples, try modifying them
-            or creating your own variations.
-          </li>
-          <li className="mb-2">
-            <b>Explore:</b> Use resources like MDN Web Docs for more in-depth
-            explanations.
-          </li>
-          <li className="mb-2">
-            <b>Build Projects:</b> After the 10 days, start building small
-            projects to apply what you've learned.
-          </li>
-        </ul>
+        <Suspense fallback={<Spinner />}>
+          <Tips />
+        </Suspense>
       </div>
+
       <div id="navigate" className="flex justify-between mt-4 mb-2">
         <NavigationButton
           direction="left"

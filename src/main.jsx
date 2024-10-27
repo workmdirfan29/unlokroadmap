@@ -67,6 +67,7 @@ const TSPage = lazy(() =>
 
 const TsGuide = lazy(() => import("./components/Pages/Guide/Content/TsGuide.jsx"))
 const Backend = lazy(() => import("./components/Pages/Roadmaps/Backend/Backend.jsx"))
+const NodeJsPage = lazy(() => import("./components/Pages/Roadmaps/Backend/Pages/NodeJs/NodeJsPage.jsx"))
 
 const NotFound = lazy(() => import("./components/utils/NotFound.jsx"));
 const ErrorBoundary = lazy(() => import("./ErrorBoundary.jsx"));
@@ -88,6 +89,7 @@ const roadmapRoutes = [
   { path: "reactjs", element: <ReactJsPage /> },
   { path: "typescript", element: <TSPage /> },
   { path: "backend", element: <Backend /> },
+  { path: "nodejs", element: <NodeJsPage /> },
 ];
 
 const guideRoutes = [

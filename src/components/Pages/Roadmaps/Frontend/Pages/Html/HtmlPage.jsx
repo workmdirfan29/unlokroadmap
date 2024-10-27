@@ -5,6 +5,8 @@ import htmlTopics from "./htmlTopics";
 
 // Lazy load components
 const Resources = lazy(() => import("./Resources"));
+const Tips = lazy(() => import("../../../Tips/Tips"));
+
 
 const components = {
   BoilerPlate: lazy(() => import("./Code/BoilerPlate")),
@@ -82,23 +84,9 @@ const HtmlPage = () => {
 
       <hr className="mb-4 opacity-20" />
       <div id="success">
-        <h3 className="mb-4 text-3xl font-semibold text-center">
-          Tips for Success:
-        </h3>
-        <ul className="mb-1 list-disc md:ml-5">
-          <li className="mb-2">
-            <b>Practice:</b> After completing the examples, try modifying them
-            or creating your own variations.
-          </li>
-          <li className="mb-2">
-            <b>Explore:</b> Use resources like MDN Web Docs for more in-depth
-            explanations.
-          </li>
-          <li className="mb-2">
-            <b>Build Projects:</b> After the 10 days, start building small
-            projects to apply what you've learned.
-          </li>
-        </ul>
+        <Suspense fallback={<Spinner />}>
+          <Tips />
+        </Suspense>
       </div>
       <div id="navigate" className="flex justify-end my-2">
         <NavigationButton path={"/roadmap/css"} title={"CSS"} />
