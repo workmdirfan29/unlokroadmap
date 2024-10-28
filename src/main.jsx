@@ -65,9 +65,13 @@ const TSPage = lazy(() =>
   import("./components/Pages/Roadmaps/Frontend/Pages/TypeScript/TSPage.jsx")
 );
 
+const BackendGuide = lazy(() => import("./components/Pages/Guide/Content/BackendGuide.jsx"))
+
 const TsGuide = lazy(() => import("./components/Pages/Guide/Content/TsGuide.jsx"))
 const Backend = lazy(() => import("./components/Pages/Roadmaps/Backend/Backend.jsx"))
 const NodeJsPage = lazy(() => import("./components/Pages/Roadmaps/Backend/Pages/NodeJs/NodeJsPage.jsx"))
+
+const NodeExpressGuide = lazy(() => import("./components/Pages/Guide/Content/NodeExpressGuide.jsx"))
 
 const NotFound = lazy(() => import("./components/utils/NotFound.jsx"));
 const ErrorBoundary = lazy(() => import("./ErrorBoundary.jsx"));
@@ -101,6 +105,8 @@ const guideRoutes = [
   { path: "github", element: <GithubGuide /> },
   { path: "react-js", element: <ReactJsGuide /> },
   { path: "ts-guide", element: <TsGuide /> },
+  { path: "backend-guide", element: <BackendGuide /> },
+  { path: "nodejs-express", element: <NodeExpressGuide /> }
 ];
 
 const router = createBrowserRouter([

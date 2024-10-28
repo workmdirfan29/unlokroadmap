@@ -8,7 +8,9 @@ const links = [
   { to: "javascript", label: "JavaScript" },
   { to: "github", label: "Github" },
   { to: "react-js", label: "React Js" },
-  { to: "ts-guide", label: "TypeScript" }
+  { to: "ts-guide", label: "TypeScript" },
+  { to: "backend-guide", label: "Backend" },
+  { to: "nodejs-express", label: "Node Js / Express Js" },
 ];
 
 const GuideLeft = ({ toggleSidebar }) => {
