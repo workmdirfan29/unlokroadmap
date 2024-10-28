@@ -8,74 +8,38 @@ const Home = lazy(() => import("./components/Home/Home.jsx"));
 const Roadmap = lazy(() => import("./components/Pages/Roadmaps/Roadmap.jsx"));
 const Guide = lazy(() => import("./components/Pages/Guide/Guide.jsx"));
 const Layout = lazy(() => import("./Layout/Layout.jsx"));
-const Index = lazy(() =>
-  import("./components/Pages/Roadmaps/IntroPage/Index.jsx")
-);
-const Frontend = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Frontend.jsx")
-);
+const Index = lazy(() => import("./components/Pages/Roadmaps/IntroPage/Index.jsx"));
+const Frontend = lazy(() => import("./components/Pages/Roadmaps/Frontend/Frontend.jsx"));
 const Product = lazy(() => import("./components/Pages/Products/Product.jsx"));
-const HtmlPage = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx")
-);
-const CSSPage = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx")
-);
-const FrontendGuide = lazy(() =>
-  import("./components/Pages/Guide/Content/FrontendGuide.jsx")
-);
-const HtmlPrev = lazy(() =>
-  import("./components/Pages/Guide/Content/HtmlPrev.jsx")
-);
-const GuideShow = lazy(() =>
-  import("./components/Pages/Guide/Intro/GuideShow.jsx")
-);
-const CssGuide = lazy(() =>
-  import("./components/Pages/Guide/Content/CssGuide.jsx")
-);
-const JsGuide = lazy(() =>
-  import("./components/Pages/Guide/Content/JsGuide.jsx")
-);
-const DevDesign = lazy(() =>
-  import("./components/Pages/DevDesign/DevDesign.jsx")
-);
-const DevIntro = lazy(() =>
-  import("./components/Pages/DevDesign/Dev/DevIntro.jsx")
-);
-const XshShahab = lazy(() =>
-  import("./components/Pages/DevDesign/DevPages/XshShahab.jsx")
-);
-const JsPage = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx")
-);
-const GithubPage = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx")
-);
-const GithubGuide = lazy(() =>
-  import("./components/Pages/Guide/Content/GithubGuide.jsx")
-);
-const ReactJsGuide = lazy(() =>
-  import("./components/Pages/Guide/Content/ReactJsGuide.jsx")
-);
-const ReactJsPage = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Pages/ReactJs/ReactJsPage.jsx")
-);
-
-const TSPage = lazy(() =>
-  import("./components/Pages/Roadmaps/Frontend/Pages/TypeScript/TSPage.jsx")
-);
-
-const BackendGuide = lazy(() => import("./components/Pages/Guide/Content/BackendGuide.jsx"))
-
-const TsGuide = lazy(() => import("./components/Pages/Guide/Content/TsGuide.jsx"))
-const Backend = lazy(() => import("./components/Pages/Roadmaps/Backend/Backend.jsx"))
-const NodeJsPage = lazy(() => import("./components/Pages/Roadmaps/Backend/Pages/NodeJs/NodeJsPage.jsx"))
-
-const NodeExpressGuide = lazy(() => import("./components/Pages/Guide/Content/NodeExpressGuide.jsx"))
-
+const HtmlPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx"));
+const CSSPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx"));
+const FrontendGuide = lazy(() => import("./components/Pages/Guide/Content/FrontendGuide.jsx"));
+const HtmlPrev = lazy(() => import("./components/Pages/Guide/Content/HtmlPrev.jsx"));
+const GuideShow = lazy(() => import("./components/Pages/Guide/Intro/GuideShow.jsx"));
+const CssGuide = lazy(() => import("./components/Pages/Guide/Content/CssGuide.jsx"));
+const JsGuide = lazy(() => import("./components/Pages/Guide/Content/JsGuide.jsx"));
+const DevDesign = lazy(() => import("./components/Pages/DevDesign/DevDesign.jsx"));
+const DevIntro = lazy(() => import("./components/Pages/DevDesign/Dev/DevIntro.jsx"));
+const XshShahab = lazy(() => import("./components/Pages/DevDesign/DevPages/XshShahab.jsx"));
+const JsPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx"));
+const GithubPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx"));
+const GithubGuide = lazy(() => import("./components/Pages/Guide/Content/GithubGuide.jsx"));
+const ReactJsGuide = lazy(() => import("./components/Pages/Guide/Content/ReactJsGuide.jsx"));
+const ReactJsPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/ReactJs/ReactJsPage.jsx"));
+const TSPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/TypeScript/TSPage.jsx"));
+const BackendGuide = lazy(() => import("./components/Pages/Guide/Content/BackendGuide.jsx"));
+const TsGuide = lazy(() => import("./components/Pages/Guide/Content/TsGuide.jsx"));
+const Backend = lazy(() => import("./components/Pages/Roadmaps/Backend/Backend.jsx"));
+const NodeJsPage = lazy(() => import("./components/Pages/Roadmaps/Backend/Pages/NodeJs/NodeJsPage.jsx"));
+const ExpressJsPage = lazy(() => import("./components/Pages/Roadmaps/Backend/Pages/ExpressJs/ExpressJsPage.jsx"));
+const NodeExpressGuide = lazy(() => import("./components/Pages/Guide/Content/NodeExpressGuide.jsx"));
+const MongoDbGuide = lazy(() => import("./components/Pages/Guide/Content/MongoDbGuide.jsx"));
+const PostgreSQLGuide = lazy(() => import("./components/Pages/Guide/Content/PostgreSQLGuide.jsx"));
 const NotFound = lazy(() => import("./components/utils/NotFound.jsx"));
 const ErrorBoundary = lazy(() => import("./ErrorBoundary.jsx"));
 const Spinner = lazy(() => import("./Spinner.jsx"));
+const DockerGuide = lazy(() => import("./components/Pages/Guide/Content/DockerGuide.jsx"));
+
 
 // Route grouping for better organization
 const devDesignRoutes = [
@@ -94,6 +58,7 @@ const roadmapRoutes = [
   { path: "typescript", element: <TSPage /> },
   { path: "backend", element: <Backend /> },
   { path: "nodejs", element: <NodeJsPage /> },
+  { path: "express-js", element: <ExpressJsPage /> },
 ];
 
 const guideRoutes = [
@@ -106,7 +71,10 @@ const guideRoutes = [
   { path: "react-js", element: <ReactJsGuide /> },
   { path: "ts-guide", element: <TsGuide /> },
   { path: "backend-guide", element: <BackendGuide /> },
-  { path: "nodejs-express", element: <NodeExpressGuide /> }
+  { path: "nodejs-express", element: <NodeExpressGuide /> },
+  { path: "mongodb-guide", element: <MongoDbGuide /> },
+  { path: "psql-guide", element: <PostgreSQLGuide /> },
+  { path: "docker-guide", element: <DockerGuide /> }
 ];
 
 const router = createBrowserRouter([

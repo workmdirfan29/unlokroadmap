@@ -9,7 +9,7 @@ const BackendTree = () => {
     // Array for backend technologies with paths
     const backendTechnologies = [
         { name: "Node.js", path: "nodejs" },
-        { name: "Express.js", path: "express" },
+        { name: "Express.js", path: "express-js" },
         { name: "MongoDB", path: "mongodb" },
         { name: "PostgreSQL", path: "postgresql" },
         { name: "Docker", path: "docker" },

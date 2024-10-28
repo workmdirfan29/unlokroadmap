@@ -92,7 +92,7 @@ const TSPage = () => {
       <div id="navigate" className="flex justify-between mt-4 mb-2">
         <NavigationButton
           direction="left"
-          path={"/roadmap/react"}
+          path={"/roadmap/reactjs"}
           title={"React Js"}
         />
         <NavigationButton path={"/roadmap/backend"} title={"Backend"} />

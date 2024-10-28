@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 // Backend technologies data
 const backendTechnologies = [
     { id: "nodejs", name: "Node.js", icon: NODEJS },
-    { id: "express", name: "Express.js", icon: EXPRESS },
+    { id: "express-js", name: "Express.js", icon: EXPRESS },
     { id: "mongodb", name: "MongoDB", icon: MONGODB },
     { id: "postgresql", name: "PostgreSQL", icon: POSTGRESQL },
     { id: "docker", name: "Docker", icon: DOCKER },

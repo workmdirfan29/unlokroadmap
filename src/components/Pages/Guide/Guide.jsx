@@ -13,9 +13,8 @@ const Guide = () => {
     <div className="flex min-h-screen">
       {/* Sidebar, hidden on small devices */}
       <div
-        className={`fixed left-0 top-16 w-[25vw] h-screen border-r-2 border-neutral-900 z-10 pl-10 ${
-          isSidebarOpen ? "block" : "hidden"
-        } md:block`}
+        className={`fixed left-0 top-16 h-full w-[25vw] z-10 pl-10 overflow-y-auto ${isSidebarOpen ? "block" : "hidden"
+          } md:block`}
       >
         <GuideLeft
           isSidebarOpen={isSidebarOpen}
@@ -25,9 +24,8 @@ const Guide = () => {
 
       <div
         id="right"
-        className={`w-full p-4 min-h-screen transition-all duration-300 ${
-          isSidebarOpen ? "ml-[25vw]" : "ml-0"
-        } md:ml-[25vw]`}
+        className={`w-full p-4 min-h-screen transition-all duration-300 ${isSidebarOpen ? "ml-[25vw]" : "ml-0"
+          } md:ml-[25vw]`}
       >
         {/* Toggle button for mobile */}
         <button className="md:hidden" onClick={toggleSidebar}>

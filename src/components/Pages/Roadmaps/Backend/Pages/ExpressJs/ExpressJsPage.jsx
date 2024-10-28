@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, memo } from "react";
 import Spinner from "../../../../../Spinner/Spinner";
 import NavigationButton from "../../../../../Button/NavigationButton";
-import nodeJsTopics from "./nodeJsTopics";
+import expressJsTopics from "./expressJsTopics"; // Assuming you have this file
 
 // Lazy load components
 const Resources = lazy(() => import("./Resources"));
@@ -9,21 +9,15 @@ const Tips = lazy(() => import("../../../Tips/Tips"));
 
 const components = {
     Introduction: lazy(() => import("./Code/Introduction")),
-    ModulesAndNPM: lazy(() => import("./Code/ModulesAndNPM")),
-    FileSystem: lazy(() => import("./Code/FileSystem")),
-    AsyncProgramming: lazy(() => import("./Code/AsyncProgramming")),
-    HTTPServer: lazy(() => import("./Code/HTTPServer")),
-    ExpressSetup: lazy(() => import("./Code/ExpressSetup")),
+    Routing: lazy(() => import("./Code/Routing")),
     Middleware: lazy(() => import("./Code/Middleware")),
+    ErrorHandling: lazy(() => import("./Code/ErrorHandling")),
+    Authentication: lazy(() => import("./Code/Authentication")),
     DatabaseIntegration: lazy(() => import("./Code/DatabaseIntegration")),
-    Auth: lazy(() => import("./Code/Auth")),
     Testing: lazy(() => import("./Code/Testing")),
-    ErrorLogging: lazy(() => import("./Code/ErrorLogging")),
-    RESTAPI: lazy(() => import("./Code/RESTAPI")),
-    WebSocketChat: lazy(() => import("./Code/WebSocketChat")),
     Deployment: lazy(() => import("./Code/Deployment")),
-    AdvancedPatterns: lazy(() => import("./Code/AdvancedPatterns")),
-    FinalProject: lazy(() => import("./Code/FinalProject")),
+    AdvancedFeatures: lazy(() => import("./Code/AdvancedFeatures")),
+    FinalProject: lazy(() => import("./Code/FinalProject"))
 };
 
 // Memoized DaySection component
@@ -53,23 +47,23 @@ const DaySection = memo(({ day, title, topics, exampleComponent }) => (
 ));
 
 // Main component
-const NodeJsPage = () => {
+const ExpressJsPage = () => {
     return (
         <div className="flex flex-col p-2 text-gray-100 rounded-lg shadow-lg">
             <div id="headings">
                 <h1 className="mb-4 text-2xl font-semibold">
-                    Node.js <span className="text-purple-700">Roadmap</span>
+                    Express.js <span className="text-purple-700">Roadmap</span>
                 </h1>
                 <p className="mb-4 text-slate-200">
-                    Node.js is a JavaScript runtime built on Chrome's V8 engine.
+                    Express.js is a web application framework for Node.js.
                 </p>
                 <hr className="mb-2 opacity-20" />
                 <p className="mb-4 text-slate-200">
-                    Here's a comprehensive roadmap to help you learn Node.js effectively:
+                    Here's a comprehensive roadmap to help you learn Express.js effectively:
                 </p>
             </div>
 
-            {nodeJsTopics.map(({ day, title, topics, exampleComponent }) => (
+            {expressJsTopics.map(({ day, title, topics, exampleComponent }) => (
                 <DaySection
                     day={day}
                     title={title}
@@ -92,13 +86,13 @@ const NodeJsPage = () => {
             <div id="navigate" className="flex justify-between mt-4 mb-2">
                 <NavigationButton
                     direction="left"
-                    path={"/roadmap/typescript"}
-                    title={"TypeScript"}
+                    path={"/roadmap/nodejs"}
+                    title={"Node.js"}
                 />
-                <NavigationButton path={"/roadmap/express-js"} title={"Express"} />
+                <NavigationButton path={"/roadmap/mongodb"} title={"Mongo DB"} />
             </div>
         </div>
     );
 };
 
-export default NodeJsPage;
+export default ExpressJsPage;
