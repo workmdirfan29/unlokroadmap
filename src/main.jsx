@@ -39,6 +39,7 @@ const NotFound = lazy(() => import("./components/utils/NotFound.jsx"));
 const ErrorBoundary = lazy(() => import("./ErrorBoundary.jsx"));
 const Spinner = lazy(() => import("./Spinner.jsx"));
 const DockerGuide = lazy(() => import("./components/Pages/Guide/Content/DockerGuide.jsx"));
+const MongoDbPage = lazy(() => import("./components/Pages/Roadmaps/Backend/Pages/MongoDb/MongoDbPage.jsx"))
 
 
 // Route grouping for better organization
@@ -59,6 +60,7 @@ const roadmapRoutes = [
   { path: "backend", element: <Backend /> },
   { path: "nodejs", element: <NodeJsPage /> },
   { path: "express-js", element: <ExpressJsPage /> },
+  { path: "mongodb", element: <MongoDbPage /> }
 ];
 
 const guideRoutes = [
