@@ -1,8 +1,8 @@
 import React, { Suspense, lazy, memo } from "react";
 import { cssTopics } from "./cssTopics"; // Assuming cssTopics is defined in another file
 import Resources from "./Resources";
-import NavigationButton from "../../../../../Button/NavigationButton";
-import Spinner from "../../../../../Spinner/Spinner";
+import NavigationButton from "../../../../../components/Button/NavigationButton"
+import Spinner from "../../../../../Spinner";
 
 const Tips = lazy(() => import("../../../Tips/Tips"));
 

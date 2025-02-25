@@ -1,6 +1,6 @@
 import React, { Suspense, lazy, memo } from "react";
-import Spinner from "../../../../../Spinner/Spinner";
-import NavigationButton from "../../../../../Button/NavigationButton";
+import NavigationButton from "../../../../../components/Button/NavigationButton"
+import Spinner from "../../../../../Spinner";
 import reactTopics from "./reactTopics"; // Import the reactTopics data
 
 // Lazy load components

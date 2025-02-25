@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, memo } from "react";
-import NavigationButton from "../../../../../Button/NavigationButton";
-import Spinner from "../../../../../Spinner/Spinner";
 import htmlTopics from "./htmlTopics";
+import NavigationButton from "../../../../../components/Button/NavigationButton"
+import Spinner from "../../../../../Spinner";
 
 // Lazy load components
 const Resources = lazy(() => import("./Resources"));
