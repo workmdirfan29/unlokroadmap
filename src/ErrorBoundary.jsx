@@ -25,7 +25,7 @@ const ErrorBoundary = ({ children }) => {
 
   if (hasError) {
     return <h1>Something went wrong.</h1>; // Fallback UI
-  }
+  }``
 
   return children;
 };
