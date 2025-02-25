@@ -13,10 +13,10 @@ const DevLeft = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://x.com/xsh_shahab"
+          href="https://x.com/mdirfan_23"
           className="text-sm text-slate-300 hover:text-purple-600 hover:font-bold hover:scale-125"
         >
-          Twitter @xsh_shahab
+          Twitter @mdirfan_23
         </a>
         <hr className="my-3.5 opacity-15" />
       </div>

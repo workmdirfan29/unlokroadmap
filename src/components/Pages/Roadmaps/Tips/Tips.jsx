@@ -19,7 +19,7 @@ const tipsData = [
 const Tips = () => {
     return (
         <div id="success">
-            <h3 className="mb-4 text-3xl font-semibold text-center">
+            <h3 className="mb-4 text-3xl text-indigo-600 font-semibold text-center">
                 Tips for Success:
             </h3>
             <ul className="mb-1 list-disc md:ml-5">

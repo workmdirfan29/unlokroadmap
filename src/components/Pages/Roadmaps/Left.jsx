@@ -10,10 +10,10 @@ const Left = () => {
       <a
         className="mb-2 text-sm text-slate-400 hover:text-purple-500 hover:font-bold"
         target="_blank"
-        href="https://x.com/xsh_shahab"
+        href="https://x.com/mdirfan_23"
         rel="noopener noreferrer"
       >
-        Twitter @xsh_shahab
+        Twitter @mdirfan_23
       </a>
       <Link to="" className="mb-2 font-semibold hover:text-purple-600">
         Roadmap

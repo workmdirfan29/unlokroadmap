@@ -28,17 +28,17 @@ const GuideLeft = ({ toggleSidebar }) => {
 
       <nav className="pt-4 pb-2 overflow-y-auto max-h-[90vh]">
         <div className="pb-2">
-          <span className="font-mono font-bold text-white">
+          <span className="font-bold mb-2 text-purple-600">
             Follow for updates
           </span>
           <br />
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-sm text-gray-200 transition-transform duration-300 transform hover:text-purple-600 hover:underline hover:scale-115 hover:font-bold"
-            href="https://x.com/xsh_shahab"
+            className="text-sm text-gray-200 transition-transform duration-300 transform hover:text-purple-600 hover:underline hover:scale-115 hover:font-bold"
+            href="https://x.com/mdirfan_23"
           >
-            Twitter @xsh_shahab
+            Twitter @mdirfan_23
           </a>
           <hr className="mt-3.5 mb-2 w-[20vw] opacity-20" />
         </div>

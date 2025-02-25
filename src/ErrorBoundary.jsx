@@ -4,9 +4,11 @@ const ErrorBoundary = ({ children }) => {
   const [hasError, setHasError] = useState(false);
 
   const handleError = (error) => {
-    setHasError(true);
-    // You can log the error to an error reporting service here
-    console.error(error);
+    try {
+      setHasError(true);
+    } catch (error) {
+      console.log("ERROR, Comes from Error Boundary", error)
+    }
   };
 
   useEffect(() => {

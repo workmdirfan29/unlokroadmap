@@ -38,14 +38,14 @@ const DesktopNav = () => {
       </NavLink>
 
       <NavLink
-        to="/product"
+        to="/service"
         className={({ isActive }) =>
           `cursor-pointer ${
             isActive ? "text-purple-500 font-bold" : "hover:text-purple-600"
           }`
         }
       >
-        Product
+        Service
       </NavLink>
 
       <div className="text-xl opacity-35 text-slate-100">|</div>

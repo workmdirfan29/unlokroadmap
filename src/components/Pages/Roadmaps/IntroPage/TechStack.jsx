@@ -15,7 +15,7 @@ const TechStack = () => {
         <div key={stack.name} className="relative w-full sm:w-[220px]">
           <Link
             to={stack.url}
-            className="flex justify-start items-center px-2 py-1.5 min-h-[50px] text-start w-full transition-all duration-300 ease-in-out border rounded-lg shadow-lg border-slate-800 hover:bg-gray-950 hover:text-white hover:shadow-xl"
+            className="flex justify-start items-center px-2 py-1.5 min-h-[50px] text-start w-full transition-all text-sm duration-300 ease-in-out border rounded-lg shadow-lg border-slate-800 hover:bg-gray-950 hover:text-white hover:shadow-xl"
           >
             {stack.name}
           </Link>
@@ -35,10 +35,10 @@ const TechStack = () => {
           )}
 
           {stack.comingSoon && (
-            <div className="absolute top-0 right-0 flex items-center px-2 py-1 space-x-1 text-xs font-bold">
+            <div className="absolute top-0 right-0 flex items-center px-2 py-0.5 space-x-1 text-[14px] font-medium">
               {/* Blinking yellow dot */}
               <span className="relative flex items-center justify-center">
-                <span className="absolute w-2 h-2 bg-yellow-400 rounded-full animate-ping"></span>{" "}
+                <span className="absolute w-1.5 h-1.5 bg-yellow-400 rounded-full animate-ping"></span>{" "}
                 {/* Blinking outer circle */}
                 <span className="relative w-1.5 h-1.5 bg-yellow-500 rounded-full"></span>{" "}
                 {/* Fixed yellow dot */}

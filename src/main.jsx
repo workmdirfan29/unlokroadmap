@@ -10,7 +10,7 @@ const Guide = lazy(() => import("./components/Pages/Guide/Guide.jsx"));
 const Layout = lazy(() => import("./Layout/Layout.jsx"));
 const Index = lazy(() => import("./components/Pages/Roadmaps/IntroPage/Index.jsx"));
 const Frontend = lazy(() => import("./components/Pages/Roadmaps/Frontend/Frontend.jsx"));
-const Product = lazy(() => import("./components/Pages/Products/Product.jsx"));
+const Product = lazy(() => import("./components/Pages/Service/Service.jsx"));
 const HtmlPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx"));
 const CSSPage = lazy(() => import("./components/Pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx"));
 const FrontendGuide = lazy(() => import("./components/Pages/Guide/Content/FrontendGuide.jsx"));
@@ -124,7 +124,7 @@ const router = createBrowserRouter([
         children: guideRoutes,
       },
       {
-        path: "product",
+        path: "service",
         element: (
           <Suspense fallback={<Spinner />}>
             <Product />

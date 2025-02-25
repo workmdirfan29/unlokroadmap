@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Product = () => {
+const Service = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen">
       <div className="max-w-sm p-6 bg-white rounded-lg shadow-md">
@@ -38,4 +38,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Service;
