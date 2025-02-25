@@ -1,6 +1,6 @@
 import React, { Suspense, lazy, memo } from "react";
-import Spinner from "../../../../../Spinner/Spinner";
-import NavigationButton from "../../../../../Button/NavigationButton";
+import NavigationButton from "../../../../../components/Button/NavigationButton"
+import Spinner from "../../../../../Spinner";
 import expressJsTopics from "./expressJsTopics"; // Assuming you have this file
 
 // Lazy load components
