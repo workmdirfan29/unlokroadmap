@@ -1,9 +1,15 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu3Line } from "react-icons/ri";
 import SocialLinks from "./SocialLinks";
 import Logo from "../../assets/Logo.png";
+
+const navLinks = [
+  { to: "/dev-design", label: "Developer Design" },
+  { to: "/roadmap", label: "Roadmap" },
+  { to: "/guide", label: "Guide" },
+];
 
 const MobileMenu = ({
   isMobileMenuOpen,
@@ -15,11 +21,8 @@ const MobileMenu = ({
   return (
     <>
       <div
-        className={`fixed top-0 right-0 z-50 bg-black flex flex-col items-start p-4 transition-transform duration-300 ease-in-out ${
-          isMobileMenuOpen
-            ? "transform translate-x-0"
-            : "transform translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 z-50 bg-black flex flex-col items-start p-4 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
         style={{ width: "100%", height: "100vh" }}
       >
         <div className="flex items-center justify-between w-full">
@@ -37,41 +40,23 @@ const MobileMenu = ({
             <FaTimes />
           </button>
         </div>
+
         <nav className="w-full mt-8">
-          <NavLink
-            to="/dev-design"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Developer Design
-          </NavLink>
-          <NavLink
-            to="/roadmap"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Roadmap
-          </NavLink>
-          <NavLink
-            to="/guide"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Guide
-          </NavLink>
+          {navLinks.map(({ to, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                `block mb-4 cursor-pointer ${isActive ? "text-sky-700 font-bold" : "hover:underline"
+                }`
+              }
+              onClick={closeMobileMenu}
+            >
+              {label}
+            </NavLink>
+          ))}
         </nav>
+
         <div className="flex items-center gap-3 p-2 mt-auto">
           <SocialLinks />
         </div>

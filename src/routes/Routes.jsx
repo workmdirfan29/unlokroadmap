@@ -8,7 +8,7 @@ const Roadmap = lazy(() => import("../pages/Roadmaps/Roadmap.jsx"));
 const Guide = lazy(() => import("../pages/Guide/Guide.jsx"));
 const Index = lazy(() => import("../pages/Roadmaps/IntroPage/Index.jsx"));
 const Frontend = lazy(() => import("../pages/Roadmaps/Frontend/Frontend.jsx"));
-const Product = lazy(() => import("../pages/Service/Service.jsx"));
+const Service = lazy(() => import("../pages/service/Service.jsx"));
 const HtmlPage = lazy(() => import("../pages/Roadmaps/Frontend/Pages/Html/HtmlPage.jsx"));
 const CSSPage = lazy(() => import("../pages/Roadmaps/Frontend/Pages/CSS/CSSPage.jsx"));
 const FrontendGuide = lazy(() => import("../pages/Guide/Content/FrontendGuide.jsx"));
@@ -16,8 +16,6 @@ const HtmlPrev = lazy(() => import("../pages/Guide/Content/HtmlPrev.jsx"));
 const GuideShow = lazy(() => import("../pages/Guide/Intro/GuideShow.jsx"));
 const CssGuide = lazy(() => import("../pages/Guide/Content/CssGuide.jsx"));
 const JsGuide = lazy(() => import("../pages/Guide/Content/JsGuide.jsx"));
-
-
 
 const DevDesign = lazy(() => import("../pages/DevDesign/DevDesign.jsx"));
 const DevIntro = lazy(() => import("../pages/DevDesign/Dev/DevIntro.jsx"));
@@ -125,7 +123,7 @@ const Routes = createBrowserRouter([
         path: "service",
         element: (
           <Suspense fallback={<Spinner />}>
-            <Product />
+            <Service />
           </Suspense>
         ),
       },
