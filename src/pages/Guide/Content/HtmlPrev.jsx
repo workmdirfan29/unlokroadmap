@@ -222,7 +222,7 @@ const HtmlPrev = () => {
     <div id="Wrapper" className="relative w-full min-h-screen text-black">
       <div className="flex text-white rounded-md shadow-md">
         <p className="mb-2 text-sm">
-          <span className="text-base font-semibold text-purple-500">Note:</span>{" "}
+          <span className="text-base font-semibold text-orange-400">Note:</span>{" "}
           You can adjust and zoom in/out. The download feature is not yet
           implemented but will be added soon.
         </p>

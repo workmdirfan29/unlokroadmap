@@ -53,7 +53,7 @@ const HtmlPage = () => {
     <div className="flex flex-col p-2 text-gray-100 rounded-lg shadow-lg">
       <div id="headings">
         <h1 className="mb-4 text-2xl font-semibold">
-          HTML <span className="text-purple-700">Roadmap</span>
+          HTML <span className="text-orange-400">Roadmap</span>
         </h1>
         <p className="mb-4 text-slate-200">
           HTML (HyperText Markup Language) is the standard language used to

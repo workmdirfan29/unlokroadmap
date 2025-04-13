@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu3Line } from "react-icons/ri";
 import SocialLinks from "./SocialLinks";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.jpg";
 
 const navLinks = [
   { to: "/dev-design", label: "Developer Design" },

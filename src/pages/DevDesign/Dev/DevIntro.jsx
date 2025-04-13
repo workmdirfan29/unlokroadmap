@@ -5,7 +5,7 @@ const DevIntro = () => {
   return (
     <div className="p-4 rounded-lg shadow-md">
       <h1 className="mb-1.5 text-3xl font-bold text-gray-200">
-        Dev <span className="text-purple-600">Design</span>
+        Dev <span className="text-orange-400">Design</span>
       </h1>
       <p className="mt-1 text-gray-300">
         Welcome to the development design section! Here, developers can connect

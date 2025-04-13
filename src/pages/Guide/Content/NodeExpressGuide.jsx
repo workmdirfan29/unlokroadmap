@@ -162,7 +162,7 @@ const NodeExpressGuide = () => {
         <div className="relative w-full min-h-screen text-black">
             <div className="flex p-3 text-gray-200 rounded-md shadow-md">
                 <p className="mb-2 text-sm">
-                    <span className="text-base font-semibold text-purple-600">Note:</span>{" "}
+                    <span className="text-base font-semibold text-orange-400">Note:</span>{" "}
                     Adjust the flow, zoom in/out, and explore each topic. Download feature is coming soon!
                 </p>
             </div>

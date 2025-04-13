@@ -14,7 +14,7 @@ const Author = () => {
                     />
                 </div>
                 <div className="flex flex-col items-center max-w-2xl text-center md:items-start md:text-left">
-                    <h1 className="text-3xl font-bold ">Meet <span className="text-indigo-700">Md. Shahabuddin</span></h1>
+                    <h1 className="text-3xl font-bold ">Meet <span className="text-orange-400">Md. Shahabuddin</span></h1>
                     <p className="text-sm lowercase text-zinc-500">@XshShahab</p>
                     <p className="mt-4 leading-relaxed text-gray-300">
                         Hello! I'm <span className="font-semibold text-white">XshShahab</span>, the founder and creator of UnlokDev.
@@ -32,7 +32,7 @@ const Author = () => {
                                     href="https://unlokthmify.vercel.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-400 hover:underline"
+                                    className="text-orange-400 hover:underline"
                                 >
                                     UnlokThmify
                                 </a>
@@ -43,7 +43,7 @@ const Author = () => {
                                     href="https://unlokroadmap.vercel.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-400 hover:underline"
+                                    className="text-orange-400 hover:underline"
                                 >
                                     UnlokRoadmap
                                 </a>

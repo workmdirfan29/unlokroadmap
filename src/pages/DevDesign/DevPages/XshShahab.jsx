@@ -95,7 +95,7 @@ const XshShahab = () => {
                               href={quiz.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-blue-400"
+                              className="text-orange-400"
                             >
                               {quiz.question}
                             </a>
@@ -107,7 +107,7 @@ const XshShahab = () => {
                           >
                             <FiArrowUpRight
                               size={20}
-                              className="text-blue-600 hover:text-blue-700"
+                              className="ttext-orange-400 hover:text-orange-400"
                             />
                           </a>
                         </li>

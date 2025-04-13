@@ -17,7 +17,7 @@ const DesktopNav = () => {
           key={to}
           to={to}
           className={({ isActive }) =>
-            `cursor-pointer ${isActive ? "text-purple-500 font-bold" : "hover:text-purple-600"
+            `cursor-pointer ${isActive ? "text-orange-400 font-bold" : "hover:text-orange-400"
             }`
           }
         >

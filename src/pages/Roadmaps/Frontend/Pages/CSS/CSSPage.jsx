@@ -53,7 +53,7 @@ const CssPage = () => {
     <div className="flex flex-col p-2 text-gray-100 rounded-lg shadow-lg">
       <div id="headings">
         <h1 className="mb-4 text-2xl font-semibold">
-          CSS <span className="text-purple-700">Roadmap</span>
+          CSS <span className="text-orange-400">Roadmap</span>
         </h1>
         <p className="mb-4 text-slate-200">
           CSS (Cascading Style Sheets) is used to style and layout web pages.

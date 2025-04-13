@@ -20,7 +20,7 @@ const Backend = () => {
     return (
         <div className="p-2 text-gray-100 rounded-lg shadow-lg">
             <div className="mb-6 text-2xl font-bold">
-                Backend <span className="text-purple-600">Development</span>
+                Backend <span className="text-orange-400">Development</span>
             </div>
             <p className="mb-4">
                 Backend development involves building the server-side of applications, managing databases, and ensuring smooth communication between the server and client.
@@ -39,7 +39,7 @@ const Backend = () => {
                         <img src={tech.icon} alt={tech.name} className="mb-2 w-14 h-14" />
                         {/* Name and View link */}
                         <div className="flex justify-between w-full mt-4">
-                            <span className="text-sm font-semibold text-purple-500">
+                            <span className="text-sm font-semibold text-orange-400">
                                 {tech.name}
                             </span>
                             <Link

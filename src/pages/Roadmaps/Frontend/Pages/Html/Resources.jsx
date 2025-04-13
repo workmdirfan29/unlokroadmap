@@ -17,7 +17,7 @@ const Resources = () => {
               href="https://www.youtube.com/user/TechGuyWeb"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Traversy Media
             </a>{" "}
@@ -28,7 +28,7 @@ const Resources = () => {
               href="https://www.youtube.com/c/TheNetNinja"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               The Net Ninja
             </a>{" "}
@@ -40,7 +40,7 @@ const Resources = () => {
               href="https://www.youtube.com/c/Academind"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Academind
             </a>{" "}
@@ -52,7 +52,7 @@ const Resources = () => {
               href="https://www.youtube.com/c/Freecodecamp"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               freeCodeCamp
             </a>{" "}
@@ -64,7 +64,7 @@ const Resources = () => {
               href="https://www.youtube.com/c/w3schools"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               W3Schools
             </a>{" "}
@@ -83,7 +83,7 @@ const Resources = () => {
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               MDN Web Docs
             </a>{" "}
@@ -94,7 +94,7 @@ const Resources = () => {
               href="https://www.w3schools.com/html/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               W3Schools
             </a>{" "}
@@ -106,7 +106,7 @@ const Resources = () => {
               href="https://html.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               HTML.com
             </a>{" "}
@@ -118,7 +118,7 @@ const Resources = () => {
               href="https://www.codecademy.com/learn/learn-html"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Codecademy
             </a>{" "}
@@ -129,7 +129,7 @@ const Resources = () => {
               href="https://www.khanacademy.org/computing/computer-programming/html-css"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Khan Academy
             </a>{" "}
@@ -148,7 +148,7 @@ const Resources = () => {
               href="https://www.freecodecamp.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               freeCodeCamp
             </a>{" "}
@@ -159,7 +159,7 @@ const Resources = () => {
               href="https://www.sololearn.com/Course/HTML/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               SoloLearn
             </a>{" "}
@@ -170,7 +170,7 @@ const Resources = () => {
               href="https://scrimba.com/learn/html"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Scrimba
             </a>{" "}
@@ -196,7 +196,7 @@ const Resources = () => {
               href="https://codepen.io/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               CodePen
             </a>{" "}
@@ -208,7 +208,7 @@ const Resources = () => {
               href="https://jsfiddle.net/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               JSFiddle
             </a>{" "}
@@ -219,7 +219,7 @@ const Resources = () => {
               href="https://code.visualstudio.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Visual Studio Code
             </a>{" "}
@@ -237,7 +237,7 @@ const Resources = () => {
               href="https://stackoverflow.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Stack Overflow
             </a>{" "}
@@ -249,7 +249,7 @@ const Resources = () => {
               href="https://www.reddit.com/r/webdev/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-orange-400 hover:underline"
             >
               Reddit - webdev
             </a>{" "}

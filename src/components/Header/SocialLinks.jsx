@@ -24,7 +24,7 @@ const SocialLinks = () => {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xl font-semibold cursor-pointer hover:text-purple-700"
+          className="text-xl font-semibold cursor-pointer hover:text-orange-400"
           aria-label={label}
         >
           {icon}

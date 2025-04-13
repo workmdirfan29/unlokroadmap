@@ -25,9 +25,9 @@ const TechStack = () => {
             <div className="absolute top-0 right-0 flex items-center px-2 py-1 space-x-1 text-xs font-bold">
               {/* Blinking purple dot */}
               <span className="relative flex items-center justify-center">
-                <span className="absolute w-2 h-2 bg-purple-400 rounded-full animate-ping"></span>{" "}
+                <span className="absolute w-2 h-2 bg-orange-400 rounded-full animate-ping"></span>{" "}
                 {/* Blinking outer circle */}
-                <span className="relative w-1.5 h-1.5 bg-purple-500 rounded-full"></span>{" "}
+                <span className="relative w-1.5 h-1.5 bg-orange-400 rounded-full"></span>{" "}
                 {/* Fixed purple dot */}
               </span>
               <span className="text-slate-100">New</span>

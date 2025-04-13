@@ -19,7 +19,7 @@ const BackendTree = () => {
         <>
             {/* Backend Section */}
             <div
-                className="flex items-center justify-between w-full pr-4 font-bold cursor-pointer text-md hover:text-purple-600"
+                className="flex items-center justify-between w-full pr-4 font-bold cursor-pointer text-md hover:text-orange-400"
                 onClick={() => setBackendOpen(!isBackendOpen)}
             >
                 Backend
@@ -40,7 +40,7 @@ const BackendTree = () => {
                 {backendTechnologies.map((tech, index) => (
                     <li
                         key={index}
-                        className="flex items-center gap-2 py-1 pl-4 group hover:text-purple-500"
+                        className="flex items-center gap-2 py-1 pl-4 group hover:text-orange-400"
                     >
                         {/* Wrap each tech in a Link component */}
                         <Link to={tech.path} className="flex items-center w-full gap-2">

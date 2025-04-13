@@ -52,7 +52,7 @@ const JsPage = () => {
     <div className="flex flex-col p-2 text-gray-100 rounded-lg shadow-lg">
       <div id="headings">
         <h1 className="mb-4 text-2xl font-semibold">
-          JavaScript <span className="text-purple-700">Roadmap</span>
+          JavaScript <span className="text-orange-400">Roadmap</span>
         </h1>
         <p className="mb-4 text-slate-200">
           JavaScript is a versatile programming language used for web
