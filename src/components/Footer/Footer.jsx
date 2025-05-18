@@ -6,12 +6,12 @@ function Footer() {
       <p className="text-sm font-normal">
         Powered by <span className="text-orange-400">Unlok Dev</span> | Crafted with care by{" "}
         <a
-          href="https://twitter.com/xsh_shahab"
+          href="https://twitter.com/mdirfan29"
           target="_blank"
           rel="noopener noreferrer"
           className="text-orange-400hover:underline"
         >
-          @xsh_shahab
+          @mdirfan29
         </a>
       </p>
     </footer>
