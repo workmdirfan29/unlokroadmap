@@ -4,12 +4,12 @@ import { FiGithub } from "react-icons/fi";
 
 const socialLinks = [
   {
-    href: "https://twitter.com/xsh_shahab",
+    href: "https://twitter.com/mdirfan29",
     icon: <FaXTwitter size={21} />,
     label: "Twitter",
   },
   {
-    href: "https://github.com/xshshahab/unlokarchive",
+    href: "https://github.com/workmdirfan29",
     icon: <FiGithub size={21} />,
     label: "GitHub",
   },
