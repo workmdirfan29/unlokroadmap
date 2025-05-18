@@ -3,7 +3,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 import { quizzes } from "./Data/quizzes";
 
-const XshShahab = () => {
+const MD_IRFAN = () => {
   const [openCategory, setOpenCategory] = useState(null);
   const [openLevel, setOpenLevel] = useState(null);
 
@@ -124,4 +124,4 @@ const XshShahab = () => {
   );
 };
 
-export default XshShahab;
+export default MD_IRFAN;
