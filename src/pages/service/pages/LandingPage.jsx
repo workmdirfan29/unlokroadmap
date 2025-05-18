@@ -13,7 +13,7 @@ const LandingPage = () => {
                     Innovation Without the Price <br /> UNLOK Free Access!
                 </p>
                 <button className="relative inline-flex items-center justify-center h-12 px-3 overflow-hidden font-medium rounded-md group bg-neutral-50 text-neutral-900">
-                    <Link target="_blank" to="https://github.com/xshshahab">
+                    <Link target="_blank" to="https://github.com/workmdirfan29">
                         <span>Go to Github</span>
                     </Link>
                     <div className="ml-1 transition group-hover:translate-x-1">
