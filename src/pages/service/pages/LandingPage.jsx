@@ -46,7 +46,7 @@ const LandingPage = () => {
                         className="flex items-center justify-center md:justify-end"
                     >
                         UNL
-                        <span className="flex items-center justify-center w-[35px] h-[35px] md:w-[90px] md:h-[90px] bg-indigo-600 rounded-full hover:-rotate-45 hover:cursor-pointer hover:bg-indigo-700 md:mx-0">
+                        <span className="flex items-center justify-center w-[35px] h-[35px] md:w-[90px] md:h-[90px] bg-orange-400 rounded-full hover:-rotate-45 hover:cursor-pointer hover:bg-orange-400 md:mx-0">
                             <img src={Pen} alt="" className="w-4 md:w-9" />
                         </span>
                         K
