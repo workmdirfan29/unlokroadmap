@@ -27,13 +27,13 @@ const DevLeft = () => {
       <hr className="my-3.5 opacity-15" />
       <div className="flex items-center justify-between">
         <Link to="xsh_shahab" className="font-semibold hover:text-orange-400">
-          <h3 className="font-mono text-lg font-semibold">xsh_shahab</h3>
+          <h3 className="font-mono text-lg font-semibold">MD_IRFAN</h3>
         </Link>
         <a
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 hover:text-orange-400"
-          href="https://github.com/xshshahab"
+          href="https://github.com/workmdirfan29"
         >
           <FiGithub size={20} />
         </a>

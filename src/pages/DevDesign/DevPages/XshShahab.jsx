@@ -21,7 +21,7 @@ const XshShahab = () => {
   return (
     <div className="p-4">
       <h2 className="mb-1 text-2xl font-bold">
-        <span className="text-purple-600">Unlock Your Potential:</span> DSA
+        <span className="text-orange-400">Unlock Your Potential:</span> DSA
         Essentials for Aspiring Java Developers
       </h2>
       <p className="p-2 mb-4 text-gray-400">
