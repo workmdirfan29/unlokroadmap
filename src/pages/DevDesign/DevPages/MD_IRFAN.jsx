@@ -107,7 +107,7 @@ const MD_IRFAN = () => {
                           >
                             <FiArrowUpRight
                               size={20}
-                              className="ttext-orange-400 hover:text-orange-400"
+                              className="text-orange-400 hover:text-orange-400"
                             />
                           </a>
                         </li>

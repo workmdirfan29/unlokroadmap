@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Spinner from "../Spinner";
+import MD_IRFAN from "../pages/DevDesign/DevPages/MD_IRFAN.jsx";
 
 const Layout = lazy(() => import("../Layout/Layout.jsx"));
 const Home = lazy(() => import("../components/Home/Home.jsx"));
@@ -19,7 +20,7 @@ const JsGuide = lazy(() => import("../pages/Guide/Content/JsGuide.jsx"));
 
 const DevDesign = lazy(() => import("../pages/DevDesign/DevDesign.jsx"));
 const DevIntro = lazy(() => import("../pages/DevDesign/Dev/DevIntro.jsx"));
-const XshShahab = lazy(() => import("../pages/DevDesign/DevPages/XshShahab.jsx"));
+const MDIRFAN = lazy(() => import("../pages/DevDesign/DevPages/MD_IRFAN.jsx"));
 const JsPage = lazy(() => import("../pages/Roadmaps/Frontend/Pages/Js/JsPage.jsx"));
 const GithubPage = lazy(() => import("../pages/Roadmaps/Frontend/Pages/Github/GithubPage.jsx"));
 const GithubGuide = lazy(() => import("../pages/Guide/Content/GithubGuide.jsx"));
@@ -41,7 +42,7 @@ const MongoDbPage = lazy(() => import("../pages/Roadmaps/Backend/Pages/MongoDb/M
 // Route grouping for better organization
 const devDesignRoutes = [
   { path: "", element: <DevIntro /> },
-  { path: "xsh_shahab", element: <XshShahab /> },
+  { path: "MD_IRFAN", element: <MD_IRFAN /> },
 ];
 
 const roadmapRoutes = [
