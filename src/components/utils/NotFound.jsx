@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-center text-white bg-gray-900">
+    <div className="flex flex-col items-center justify-center h-screen text-center text-white bg-black-500">
       <div className="relative">
         <h1 className="p-6 font-bold bg-center bg-cover rounded-md text-9xl">
           Oops!
@@ -14,7 +14,7 @@ const NotFound = () => {
       </p>
       <Link
         to="/"
-        className="px-6 py-2 mt-6 text-white transition bg-purple-600 rounded hover:bg-purple-700"
+        className="px-6 py-2 mt-6 text-white transition bg-orange-500 rounded hover:bg-orange-700"
       >
         Go to Home
       </Link>
