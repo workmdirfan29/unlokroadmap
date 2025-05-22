@@ -9,7 +9,7 @@ const Title = ({ onClick }) => {
         src={Logo}
         className="rounded-lg mix-blend-screen"
         alt="logo"
-        width={68}
+        width={72}
         
 
       />
