@@ -24,7 +24,7 @@ const Spinner = () => {
           width: 48px;
           height: 48px;
           border-radius: 50%;
-          border-left: 4px solid #921592;
+          border-left: 4px solid #FFA726;
           border-bottom: 4px solid transparent;
           animation: rotation 0.5s linear infinite reverse;
         }
