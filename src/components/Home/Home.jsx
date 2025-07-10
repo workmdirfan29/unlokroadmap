@@ -28,14 +28,19 @@ const Home = () => {
             </a>
           </div>
 
-          {/* Backend Card */}
           <div className="bg-orange-200 shadow-md rounded-lg p-6 hover:shadow-xl transition duration-300">
             <h2 className="text-2xl font-semibold mb-2 text-gray-900">Backend Developer</h2>
             <p className="text-gray-600 mb-4">Learn Node.js, databases, APIs, authentication, and more.</p>
-            <button className="px-4 py-2 bg-[#DF8236] text-white rounded hover:bg-[#e87429] transition duration-300">
+            <a
+              href="./roadmap/backend"
+              // target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 bg-[#DF8236] text-white rounded hover:bg-[#e87429] transition duration-300"
+            >
               View Roadmap
-            </button>
+            </a>
           </div>
+
 
           {/* DevOps Card */}
           <div className="bg-orange-200 shadow-md rounded-lg p-6 hover:shadow-xl transition duration-300">
