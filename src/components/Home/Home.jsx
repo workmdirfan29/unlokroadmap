@@ -6,7 +6,7 @@ const Home = () => {
       {/* Adjusted top margin to bring the content lower */}
       <div className="md:mt-20">
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
-          Developer <span className="text-[#DF8236]">Roadmap</span>
+          Developer <span className="text-[#FF9524]">Roadmap</span>
         </h1>
 
         <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mb-10 mx-auto">
