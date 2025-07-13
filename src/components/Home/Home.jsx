@@ -1,5 +1,5 @@
 import React from "react";
-
+import Hero from "../Hero/Hero.jsx";
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-start w-full min-h-screen px-4 py-12 bg-[#060606] text-center">
@@ -62,6 +62,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+          <Hero />
     </div>
   );
 };
