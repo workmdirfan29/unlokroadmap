@@ -3,8 +3,7 @@ import Hero from "../Hero/Hero.jsx";
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-start w-full min-h-screen px-4 py-12 bg-[#060606] text-center">
-      {/* Adjusted top margin to bring the content lower */}
-      <div className="md:mt-20">
+      <div className="md:mt-20 h-screen">
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">
           Developer <span className="text-[#FF9524]">Roadmap</span>
         </h1>
