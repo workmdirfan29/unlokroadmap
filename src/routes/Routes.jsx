@@ -39,7 +39,6 @@ const NotFound = lazy(() => import("../components/utils/NotFound.jsx"));
 const DockerGuide = lazy(() => import("../pages/Guide/Content/DockerGuide.jsx"));
 const MongoDbPage = lazy(() => import("../pages/Roadmaps/Backend/Pages/MongoDb/MongoDbPage.jsx"));
 
-// Route grouping for better organization
 const devDesignRoutes = [
   { path: "", element: <DevIntro /> },
   { path: "MD_IRFAN", element: <MD_IRFAN /> },

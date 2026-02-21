@@ -38,9 +38,7 @@ const Frontend = () => {
             key={tech.id}
             className="flex flex-col items-center justify-center p-4 transition duration-300 transform border border-gray-700 rounded-lg hover:bg-gray-900 hover:border-gray-600 hover:scale-105"
           >
-            {/* Icon */}
             <img src={tech.icon} alt={tech.name} className="mb-2 w-14 h-14" />
-            {/* Name and View link */}
             <div className="flex justify-between w-full mt-4">
               <span className="text-sm font-semibold text-orange-400">
                 {tech.name}

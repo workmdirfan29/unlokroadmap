@@ -6,7 +6,6 @@ import { IoRemoveOutline } from "react-icons/io5";
 const FrontendTree = () => {
   const [isFrontendOpen, setFrontendOpen] = useState(false);
 
-  // Array for frontend technologies with paths
   const frontendTechnologies = [
     { name: "HTML", path: "html" },
     { name: "CSS", path: "css" },
@@ -18,7 +17,6 @@ const FrontendTree = () => {
 
   return (
     <>
-      {/* Frontend Section */}
       <div
         className="flex items-center justify-between w-full pr-4 font-bold cursor-pointer text-md hover:text-orange-400"
         onClick={() => setFrontendOpen(!isFrontendOpen)}
@@ -35,8 +33,9 @@ const FrontendTree = () => {
 
       {/* Dynamically generate list items */}
       <ul
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${isFrontendOpen ? "max-h-screen" : "max-h-0"
-          }`}
+        className={`transition-all duration-500 ease-in-out overflow-hidden ${
+          isFrontendOpen ? "max-h-screen" : "max-h-0"
+        }`}
       >
         {frontendTechnologies.map((tech, index) => (
           <li
